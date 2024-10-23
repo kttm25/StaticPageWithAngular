@@ -1,0 +1,28 @@
+#container {
+  height: calc(100vh - 160px);
+  color: black;
+  display: flex;
+  border: 0.1cap solid black;
+}
+
+#main {
+  background-color: violet;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aside {
+  background-color: green;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px){
+  #container{
+    flex-direction: column-reverse;
+  }
+}
